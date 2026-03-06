@@ -33,7 +33,6 @@ const DUMMY_DATA: Restaurant[] = [
 ];
 
 export async function POST(req: Request) {
-    console.log("API KEY:", process.env.GEMINI_API_KEY);
   try {
     const { stations, cuisine, budget } = await req.json();
     const apiKey = process.env.GEMINI_API_KEY;
